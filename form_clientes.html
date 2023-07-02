@@ -1,0 +1,1736 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Sistema de seguridad</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.gstatic.com" rel="preconnect">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Updated: May 30 2023 with Bootstrap v5.3.0
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header fixed-top d-flex align-items-center">
+
+    <div class="d-flex align-items-center justify-content-between">
+      <a href="index.html" class="logo d-flex align-items-center">
+        <img src="assets/img/logotipo_azul.png" alt="">
+      </a>
+      <i class="bi bi-list toggle-sidebar-btn"></i>
+    </div><!-- End Logo -->
+
+    <div class="search-bar">
+      <form class="search-form d-flex align-items-center" method="POST" action="#">
+        <input type="text" name="query" placeholder="Buscar" title="Enter search keyword">
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+      </form>
+    </div><!-- End Search Bar -->
+
+    <nav class="header-nav ms-auto">
+      <ul class="d-flex align-items-center">
+
+        <li class="nav-item d-block d-lg-none">
+          <a class="nav-link nav-icon search-bar-toggle " href="#">
+            <i class="bi bi-search"></i>
+          </a>
+        </li><!-- End Search Icon-->
+
+        <li class="nav-item dropdown">
+
+          <a class="nav-link nav-icon" href="#" data-bs-toggle="dropdown">
+            <i class="bi bi-bell"></i>
+            <span class="badge bg-primary badge-number">4</span>
+          </a><!-- End Notification Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow notifications">
+            <li class="dropdown-header">
+              You have 4 new notifications
+              <a href="#"><span class="badge rounded-pill bg-primary p-2 ms-2">View all</span></a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-exclamation-circle text-warning"></i>
+              <div>
+                <h4>Lorem Ipsum</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>30 min. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-x-circle text-danger"></i>
+              <div>
+                <h4>Atque rerum nesciunt</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>1 hr. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-check-circle text-success"></i>
+              <div>
+                <h4>Sit rerum fuga</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>2 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li class="notification-item">
+              <i class="bi bi-info-circle text-primary"></i>
+              <div>
+                <h4>Dicta reprehenderit</h4>
+                <p>Quae dolorem earum veritatis oditseno</p>
+                <p>4 hrs. ago</p>
+              </div>
+            </li>
+
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li class="dropdown-footer">
+              <a href="#">Show all notifications</a>
+            </li>
+
+          </ul><!-- End Notification Dropdown Items -->
+
+        </li><!-- End Notification Nav -->
+
+
+        <li class="nav-item dropdown pe-3">
+
+          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
+            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
+            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
+          </a><!-- End Profile Iamge Icon -->
+
+          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
+            <li class="dropdown-header">
+              <h6>Kevin Anderson</h6>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-person"></i>
+                <span>My Profile</span>
+              </a>
+            </li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
+                <i class="bi bi-gear"></i>
+                <span>Account Settings</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="dropdown-item d-flex align-items-center" href="#">
+                <i class="bi bi-box-arrow-right"></i>
+                <span>Sign Out</span>
+              </a>
+            </li>
+          </ul><!-- End Profile Dropdown Items -->
+        </li><!-- End Profile Nav -->
+
+      </ul>
+    </nav><!-- End Icons Navigation -->
+
+  </header><!-- End Header -->
+
+  <!-- ======= Sidebar ======= -->
+  <aside id="sidebar" class="sidebar">
+    <ul class="sidebar-nav" id="sidebar-nav">
+
+      <li class="nav-item mb-4">
+        <a class="nav-link " href="g_administrativa.html">
+          <img src="./assets/img/icono/grupos.png" alt="" width="33">
+          <span>Gestión Administrativa</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#components-nav" data-bs-toggle="collapse" href="#">
+          <img src="./assets/img/icono/administracion.png" alt="" width="27"><span>Administración</span><i
+            class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="components-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+
+          <li class="nav-item ">
+            <a href="clientes.html" class="nav-link" style="background:#F9F5E7;">
+              <span>Clientes</span>
+            </a>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" style="background:#F9F5E7;">
+              <span>Ingresos</span>
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Facturas</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Cuentas por cobrar</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Pagos recibidos</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Nota de credito</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Catizaciones</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Conduce</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Estado de cuenta clientes</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item ">
+            <a class="nav-link" style="background:#F9F5E7;">
+              <span>compras</span>
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Compra de mercancia</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Orden de compras</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Costo/Gastos</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Cuentas por pagar</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Proveedores</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" style="background:#F9F5E7;">
+              <span>Inventario</span>
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Arma de fuego letal</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Arma de fuego menos letal</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Electrodomestico</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Equipo de comunicacion</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Equipos de seguridad</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Herramientas</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Mobiliario Oficina</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Uniformes</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Vehiculos</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li><!-- End Components Nav -->
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#forms-nav" data-bs-toggle="collapse" href="#">
+          <img src="./assets/img/icono/reclutamiento.png" alt="" width="27"><span>Recursos Humanos</span><i
+            class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="forms-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+          <li class="nav-item ">
+            <a class="nav-link" style="background:#F9F5E7;">
+              <span>Personal</span>
+            </a>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" style="background:#F9F5E7;">
+              <span>Nomina</span>
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Nomina actual</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Nomina anteriores</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Registrar CxC a empleados</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" style="background:#F9F5E7;">
+              <span>Reportes</span>
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Reporte Asistencia Diaria</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Reporte General de Personal</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Reporte envio a Banreservas</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Reporte envio a Banreservas Excel</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item ">
+            <a class="nav-link" style="background:#F9F5E7;">
+              <span>Evaluacion Psicologica</span>
+            </a>
+            <ul class="submenu">
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Test de Personalidad</span>
+                </a>
+              </li>
+              <li>
+                <a href="components-breadcrumbs.html">
+                  <i class="bi bi-circle"></i><span>Prueba TRF</span>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item ">
+            <a href="#" class="nav-link" style="background:#F9F5E7;">
+              <span>Calendario dias libres</span>
+            </a>
+          </li>
+        </ul>
+      </li><!-- End Login Page Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" data-bs-target="#tables-nav" data-bs-toggle="collapse" href="#">
+          <img src="./assets/img/icono/escala.png" alt="" width="27"><span>Legales</span><i
+            class="bi bi-chevron-down ms-auto"></i>
+        </a>
+        <ul id="tables-nav" class="nav-content collapse " data-bs-parent="#sidebar-nav">
+
+        </ul>
+      </li><!-- End Tables Nav -->
+
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="pages-login.html">
+          <i class="bi bi-box-arrow-in-right"></i>
+          <span>Login</span>
+        </a>
+      </li><!-- End Login Page Nav -->
+    </ul>
+
+  </aside><!-- End Sidebar-->
+
+  <main id="main" class="main">
+
+    <div class="pagetitle mt-4 mb-5">
+      <h3>Formulario Cliente</h3>
+    </div><!-- End Page Title -->
+
+    <section class="section dashboard">
+      <div class="card">
+        <div class="card-header" style="background:#FB9B2D;">
+          <div class="row text-white">
+            <div class="col-md-6">
+              <h5 class="card-title">Formulario de ingreso</h5>
+            </div>
+
+            <div class="col-md-3">
+              <p>Código : F0-SG-11</p>
+            </div>
+
+            <div class="col-md-3">
+              <p>Número de cliente : 0093</p>
+            </div>
+
+          </div>
+        </div>
+        <div class="card-body">
+
+
+          <!-- Bordered Tabs -->
+          <ul class="nav nav-tabs nav-tabs-bordered" id="borderedTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#bordered-home"
+                type="button" role="tab" aria-controls="home" aria-selected="true">Parte 1</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#bordered-profile"
+                type="button" role="tab" aria-controls="profile" aria-selected="false">Parte 2</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#bordered-contact"
+                type="button" role="tab" aria-controls="contact" aria-selected="false">Parte 3</button>
+            </li>
+            <li class="nav-item" role="presentation">
+              <button class="nav-link" id="ingreso-tab" data-bs-toggle="tab" data-bs-target="#bordered-ingreso"
+                type="button" role="tab" aria-controls="ingreso" aria-selected="false">Parte 4</button>
+            </li>
+          </ul>
+          <div class="tab-content pt-2" id="borderedTabContent">
+            <!--========== formulario numero 1 ==========-->
+            <div class="tab-pane fade show active" id="bordered-home" role="tabpanel" aria-labelledby="home-tab">
+
+              <form class="row g-3">
+
+                <div class="col-md-4">
+                  <label for="inputZip" class="form-label">RNC:</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputCity" class="form-label">Registro Mercantil:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Fecha Vencimiento Registro Mercantil:</label>
+                  <input type="date" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">Razón Social:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">Nombre Comercial:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">DOMICILIO LEGAL Información que aparece en Registro
+                    Mercantil:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">Ciudad oficina legal:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Correo electrónico:</label>
+                  <input type="email" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Teléfono:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Sector:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <h6>Domicilio principal</h6>
+
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Sector:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Provincia: </label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>..</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Status:</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>No definido</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">Correo electrónico:</label>
+                  <input type="email" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">Telefono:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <h6>Autorizo a La Compañía de Seguridad para que la información de todos
+                  mis productos sea enviada a la siguiente dirección</h6>
+                <div class="col-md-4 mb-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Trabajo
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Correo Electrónico
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Domicilio Legal
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Fecha ingreso de servicio </label>
+                  <input type="date" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Horas contratadas mensual:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Precio por hora $:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-4 mb-5">
+                  <fieldset>
+                    <legend class="col-form-label col-sm-3 pt-0">Anticipo:</legend>
+                    <div class="col-sm-10">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                          checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          Si
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                          No
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="col-md-4 mb-5">
+                  <label for="inputState" class="form-label">Monto pagado anticipo $:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-4 mb-5">
+                  <label for="inputState" class="form-label">ZONA:</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Zona Santo Domingo</option>
+                    <option value="1">Zona Este</option>
+                    <option value="2">Zona Nordeste</option>
+                    <option value="3">Zona Este</option>
+                  </select>
+                </div>
+              </form>
+            </div>
+
+            <!--========== fin formulario numero 1 ==========-->
+
+            <!--==========formulario numero 2 ==========-->
+            <div class="tab-pane fade" id="bordered-profile" role="tabpanel" aria-labelledby="profile-tab">
+              <form class="row g-3">
+                <h6 style="color:#FB9B2D;">Datos de la facturación</h6>
+
+                <div class="col-md-2">
+                  <label for="inputState" class="form-label">Cantidad Horas Servicio x Dia:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-2">
+                  <label for="inputState" class="form-label">Valor Hora Trabajo:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Fecha Inicio Facturacion:</label>
+                  <input type="date" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Fecha Cierre Facturacion: </label>
+                  <input type="date" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-5 mb-3">
+                  <label for="inputState" class="form-label">Cantidad de Sucursales:</label>
+                  <input type="text" class="form-control" id="inputCity">
+
+                  <fieldset class="mb-3">
+                    <legend class="col-form-label col-sm-5 pt-0">Tipo de empresa:</legend>
+                    <div class="col-sm-4">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                          checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          Privada
+                        </label>
+                      </div>
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                        <label class="form-check-label" for="gridRadios2">
+                          Publica
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="col-md-7">
+                  <h6>Tipo de empresa</h6>
+                  <label for="inputState" class="form-label">Si es Mixta, Detalle Proporcion:</label>
+                  <input type="text" class="form-control" id="inputCity">
+
+                  <label for="inputState" class="form-label">Mayores Donantes.</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <h6>Tipo de Actividad</h6>
+                <div class="col-md-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Agricola
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Textil
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Salud
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Educación
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Alimentos
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Químico
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Metalmecánico
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Cementos
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Turismo
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Informatica
+                    </label>
+                  </div>
+                </div>
+                <div class="col-md-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Transporte
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Construcción
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Telecomunicaciones
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-md-2">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Petróleo
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Servicios
+                    </label>
+                  </div>
+                </div>
+
+                <div class="row mb-3 mt-4 mb-5">
+                  <label for="newPassword" class="col-md-2 col-lg-3 col-form-label">Otra Actividad</label>
+                  <div class="col-md-8 col-lg-9">
+                    <label for="inputState" class="form-label">Descripcion Otra Actividad:</label>
+                    <input name="newpassword" type="text" class="form-control" id="newPassword">
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <!--========== fin formulario numero 2 ==========-->
+
+            <!--==========formulario numero 3 ==========-->
+            <div class="tab-pane fade" id="bordered-contact" role="tabpanel" aria-labelledby="contact-tab">
+              <form class="row g-3">
+                <h6 style="color:#FB9B2D;">Ingresos Mensuales actividad principal</h6>
+
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Menos de $ 20,000,000.00
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      $ 100,000,001 a $ 200,000,000
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      $ 1,000,000,001 a $ 4,000,000,000
+                    </label>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      $ 20,000,001 a $ 100,000,000
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      $ 200,000,001 a $ 1,000,000,000
+                    </label>
+                  </div>
+
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck2" checked>
+                    <label class="form-check-label" for="gridCheck2">
+                      Mas de $ 4,000,000,001
+                    </label>
+                  </div>
+                </div>
+
+                <div class="row mb-3 mt-4">
+                  <label for="newPassword" class="col-md-4 col-lg-5 col-form-label">Otros ingresos promedios mensual
+                    $:</label>
+                  <div class="col-md-5 col-lg-5">
+                    <input name="newpassword" type="text" class="form-control" id="newPassword">
+                  </div>
+                </div>
+                <div class="p-2" style="background:#f6f9ff;">
+                  <h6 class="text-center" style="color:#FB9B2D;">Descripción actividad económica
+                    de otros ingresos (actividad secundaria, si existe)</h6>
+                </div>
+
+                <div class="col-md-8 mb-3">
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="p-2" style="background:#f6f9ff;">
+                  <h6 class="text-center" style="color:#FB9B2D;">Informacion basica representante legal /
+                    Apoderado legal / Autoridad con firma</h6>
+                </div>
+                <h6>Tipo de identificación:</h6>
+
+                <div class="col-md-2 ">
+                  <fieldset>
+                    <div class="col-sm-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                          checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          Cedula
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="col-md-2">
+                  <fieldset>
+                    <div class="col-sm-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                          checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          Pasaporte
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="col-md-2">
+                  <fieldset>
+                    <div class="col-sm-5">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                          checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          ID Residencia
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="inputState" class="form-label"> Número:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-3 mb-3">
+                  <label for="inputState" class="form-label">Fecha Venc.:</label>
+                  <input type="date" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">Nombres y Apellidos (Primero nombres, luego apellidos):
+                  </label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">Ciudad residencia:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Provincia:</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Santo Domingo</option>
+                    <option value="1">Azua</option>
+                    <option value="2">Bani</option>
+                    <option value="3">San Cristobal</option>
+                  </select>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Pais:</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Argentina</option>
+                    <option value="1">Mexico</option>
+                    <option value="2">Colombia</option>
+                    <option value="3">Venezuela</option>
+                  </select>
+                </div>
+
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">E-Mail:</label>
+                  <input type="email" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Direccion residencial:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Fecha de Nacimiento:</label>
+                  <input type="date" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">Nacionalidad:</label>
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected>Argentino</option>
+                    <option value="1">Mexicano</option>
+                    <option value="2">Colombiano</option>
+                    <option value="3">Dominicano</option>
+                  </select>
+                </div>
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">Telefono:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputState" class="form-label">Celular:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="p-2" style="background:#f6f9ff;">
+                  <h6 class="text-center" style="color:#FB9B2D;">Identificacion Beneficiario final</h6>
+                </div>
+                <p>Identificación de accionistas que tengan directa o indirectamente disponible el 20% o más del capital
+                  social,
+                  aporte o participación (utilice hoja aparte para relacionar adicionales).</p>
+                <h6>Tipo de identificacion</h6>
+                <div class="col-md-2 ">
+                  <fieldset>
+                    <div class="col-sm-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                          checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          Cedula
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+
+                <div class="col-md-2">
+                  <fieldset>
+                    <div class="col-sm-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                          checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          Pasaporte
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-md-2">
+                  <fieldset>
+                    <div class="col-sm-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                          checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          RNC
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-md-2">
+                  <fieldset>
+                    <div class="col-sm-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                          checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          ID Extranjero
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputState" class="form-label">Especifique Numero:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-8">
+                  <label for="inputState" class="form-label">Razón social y/o nombres y apellidos (primero nombres,
+                    luego apellidos)</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="p-2" style="background:#f6f9ff;">
+                  <h6 class="text-center" style="color:#FB9B2D;">Solicitud de Seguridad</h6>
+                </div>
+                <div class="col-md-2">
+                  <fieldset>
+                    <div class="col-sm-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                          checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          VIP
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-md-2">
+                  <fieldset>
+                    <div class="col-sm-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                          checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          ESTATICA
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-md-2">
+                  <fieldset>
+                    <div class="col-sm-2">
+                      <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
+                          checked>
+                        <label class="form-check-label" for="gridRadios1">
+                          CCTV
+                        </label>
+                      </div>
+                    </div>
+                  </fieldset>
+                </div>
+                <div class="col-md-5 mb-5">
+                  <label for="inputState" class="form-label">Otro, Especifique:</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+
+              </form>
+            </div>
+
+            <!--========== fin formulario numero 3 ==========-->
+
+            <!--==========formulario numero 4 ==========-->
+            <div class="tab-pane fade" id="bordered-ingreso" role="tabpanel" aria-labelledby="ingreso-tab">
+                <form action="">
+
+              <div class="p-2 mb-2" style="background:#f6f9ff;">
+                <h6 class="text-center" style="color:#FB9B2D;">DECLARACIÓN DE VERACIDAD Y AUTORIZACIÓN DE
+                  VERIFICACIÓN Y CONSULTA DE LA INFORMACIÓN SUMINISTRADA</h6>
+              </div>
+              <p>Declaro bajo la fe del juramento, y bajo pena de perjurio, de
+                forma libre, consciente, expresa y voluntaria que toda la
+                información proporcionada en este formulario es verdadera y
+                completa, y que la seguridad aquí solicitada no entrará en vigor
+                mientras no sea aceptado por La Empresa.</p>
+
+              <table class="table table-bordered ">
+                <thead>
+                  <tr>
+                    <th scope="col">NO.</th>
+                    <th scope="col">ELEMENTOS DE EVALUACION</th>
+                    <th scope="col">SELECCION</th>
+                    <th scope="col">COMENTARIOS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>
+                      <p>¿Posee un Certificado BASC, OEA, CTPAT o alguna otra iniciativa de Seguridad?</p>
+                    </td>
+                    <td>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                SI
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                NO
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                N/A
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control" id="inputCity">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">2</th>
+                    <td>
+                      <p>¿Evalua a sus Asociados de Negocios con relación a los requerimientos minimos de seguridad?</p>
+                    </td>
+                    <td>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                SI
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                NO
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                N/A
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control" id="inputCity">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">3</th>
+                    <td>
+                      <p>¿Cuenta con personal de seguridad disponinble?</p>
+                    </td>
+                    <td>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                SI
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                NO
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                N/A
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control" id="inputCity">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">4</th>
+                    <td>
+                      <p>¿Tiene establecido un procedimiento o sistema para el
+                        Control de Acceso para los empleados y visitantes?</p>
+                    </td>
+                    <td>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                SI
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                NO
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                N/A
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control" id="inputCity">
+                    </td>
+                  </tr>
+                  <tr>
+                    <th scope="row">5</th>
+                    <td>
+                      <p>¿Depura al personal previo contratación?</p>
+                    </td>
+                    <td>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                SI
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                NO
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                N/A
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control" id="inputCity">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">6</th>
+                    <td>
+                      <p>¿Cuenta con programa de concientización
+                        y prevención en el consumo de drogas y otras adicciones
+                        para los empleados?</p>
+                    </td>
+                    <td>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                SI
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                NO
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                N/A
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control" id="inputCity">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">7</th>
+                    <td>
+                      <p>¿Cuentan con sistema de videocámara en lugares críticos y/o
+                        vulnerables?</p>
+                    </td>
+                    <td>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                SI
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                NO
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                N/A
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control" id="inputCity">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">8</th>
+                    <td>
+                      <p>¿Cuenta con sistemas o planes de comunicación
+                        y evacuación para casos de emergencias?</p>
+                    </td>
+                    <td>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                SI
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                NO
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                N/A
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control" id="inputCity">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">9</th>
+                    <td>
+                      <p>¿Cuenta con cercas de protección perimetral?</p>
+                    </td>
+                    <td>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                SI
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                NO
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                N/A
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control" id="inputCity">
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <th scope="row">10</th>
+                    <td>
+                      <p>¿Cuentan las áreas críticas con la iluminación suficiente?</p>
+                    </td>
+                    <td>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                SI
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                NO
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                      <div class="col-md-2">
+                        <fieldset>
+                          <div class="col-sm-2">
+                            <div class="form-check">
+                              <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
+                                value="option1" checked>
+                              <label class="form-check-label" for="gridRadios1">
+                                N/A
+                              </label>
+                            </div>
+                          </div>
+                        </fieldset>
+                      </div>
+                    </td>
+                    <td>
+                      <input type="text" class="form-control" id="inputCity">
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <div class="col-md-8 mb-5">
+                <label for="inputState" class="form-label">Registro mercantil</label>
+                <input type="file" class="form-control" id="inputCity">
+
+                <label for="inputState" class="form-label">Certificaciones</label>
+                <input type="file" class="form-control" id="inputCity">
+
+                <label for="inputState" class="form-label">Adjuntar Documento</label>
+                <input type="file" class="form-control" id="inputCity">
+              </div>
+              <div class="col-sm-10">
+                <button type="submit" class="btn btn-success">Guardar</button>
+              </div>
+            </form>
+            </div>
+          </div><!-- End Bordered Tabs -->
+
+        </div><!--fin card body -->
+      </div>
+
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/chart.js/chart.umd.js"></script>
+  <script src="assets/vendor/echarts/echarts.min.js"></script>
+  <script src="assets/vendor/quill/quill.min.js"></script>
+  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
