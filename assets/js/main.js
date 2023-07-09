@@ -304,13 +304,46 @@
     new simpleDatatables.DataTable(datatable);
   })*/
 
-  $(function () {
+ /* $(function () {
     $("#example1").DataTable({
-      "responsive": true, "lengthChange": false, "autoWidth": false,
+      "responsive": true, "lengthChange": true, "autoWidth": false,
       "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
     }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
     
+  });*/
+
+  $(function () {
+    $(function () {
+      $("#example1").DataTable({
+        language: {
+            "emptyTable": "No hay información",
+            "decimal": "",
+            "info": "Mostrando total",
+            "infoEmpty": "Mostrando 0 to 0 of 0 datos",
+            "infoFiltered": "(Filtrado de MAX total datos)",
+            "infoPostFix": "",
+            "thousands": ",",
+            "lengthMenu": "",
+            "loadingRecords": "Cargando...",
+            "processing": "Procesando...",
+            "search": "Buscador:",
+            "zeroRecords": "Sin resultados encontrados",
+            "paginate": {
+                "first": "Primero",
+                "last": "Ultimo",
+                "next": "Siguiente",
+                "previous": "Anterior"
+            }
+           },
+        "responsive": true, "lengthChange": true, "autoWidth": false,
+        "buttons": ["copy", "csv", "excel", "pdf", "print", "colvis"]
+      }).buttons().container().appendTo('#example1_wrapper .col-md-6:eq(0)');
+      
+    });
   });
+
+ 
+
 
   /**
    * Autoresize echart charts
